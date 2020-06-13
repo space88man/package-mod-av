@@ -12,8 +12,10 @@ BuildRequires:	ffmpeg-devel, freeswitch-devel = %{version}
 Requires:	ffmpeg-libs, freeswitch = %{version}
 
 %description
-FreeSWITCH mod_av.so packaging
-
+Out-of-repo packaging of FreeSWITCH mod_av.so on CentOS 7.
+CentOS 7 packages don't come with mod_av.so as there is no
+FFmpeg on CentOS 7. You need to wrangle a ffmpeg-devel yourself,
+e.g., from RPMFusion.
 
 %prep
 %setup -q
