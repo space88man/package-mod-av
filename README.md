@@ -56,6 +56,6 @@ yum install ffmpeg-devel
 # artifact in
 ~/rpmbuild/RPMS/x86_64/freeswitch-application-av-1.10.3.release.5-1.el7.x86_64.rpm
 
-# files
+# files, after installation
 /usr/lib64/freeswitch/mod/mod_av.so
 ```
