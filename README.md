@@ -12,10 +12,15 @@ FreeSWITCH CentOS 7 packages: https://files.freeswitch.org/repo/yum/centos-relea
 
 ## Intended Audience
 
-This is meant for those using the packaging of FreeSWITCH
-for CentOS 7 by the FreeSWITCH team, and just want to add `mod_av.so`. By leveraging
-`freeswitch-devel` we can skip the `./configure` step, and won't need
-the development dependency set that a complete build would.
+The FreeSWITCH teams provides over 100 CentOS 7 packages, including `freeswitch-devel`.
+
+This repo is meant for those using these packages but also want to add a “snowflake” RPM
+for internal consumption.
+
+This repo packages `mod_av.so` but can be used as an example for other unpackaged modules.
+
+By using upstream's `freeswitch-devel` we can skip the `./configure` step, and won't need
+the development dependencies that a full build would require.
 
 ## FFmpeg
 
