@@ -29,6 +29,9 @@ from, e.g., RPMFusion.
 
 
 ## HOWTO
+Versions as of 2020-06-14:
+* FreeSWITCH: 1.10.3.release.5
+* ffmpeg-devel from RPM Fusion: 3.4.7-3
 
 ```
 # Preparation
@@ -49,6 +52,13 @@ yum install ffmpeg-devel
 ./build.sh
 ```
 
+### FFmpeg 4.2.x
+
+The CentOS 8 FFmpeg source rpm from RPM Fusion rebuilds cleanly on CentOS 7 so you
+can roll-your-own FFmpeg 4.2.x on CentOS 7 if you need to. You will need to comment out
+RPM macros `%ldconfig_scriplets`, `%set_build_flags` from the .spec file as these
+don't exist on CentOS 7. To get libopus, libvpx to work you will also need to rebuild newer
+versions from the CentOS 8 source rpms.
 
 ## Files 
 
