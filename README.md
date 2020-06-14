@@ -26,9 +26,21 @@ from, e.g., RPMFusion.
 ## HOWTO
 
 ```
+# Preparation
+yum install https://files.freeswitch.org/repo/yum/centos-release/freeswitch-release-repo-0-1.noarch.rpm
+yum install freeswitch-devel zlib-devel
+
+# Example of ffmpeg-devel from RPMFusion
+yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+yum install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
+
+yum install ffmpeg-devel
+
+
 # This will create the tarball, and run rpmbuild on the tarball
 # in ~/rpmbuild. The artifact will be in ~/rpmbuild/RPMS/x86_64/
 # Build requires: freeswitch-devel, zlib-devel, ffmpeg-devel
+
 ./build.sh
 ```
 
