@@ -12,7 +12,7 @@ FreeSWITCH CentOS 7 packages: https://files.freeswitch.org/repo/yum/centos-relea
 
 ## Intended Audience
 
-The FreeSWITCH teams provides over 100 CentOS 7 packages, including `freeswitch-devel`.
+The FreeSWITCH team provides over 100 CentOS 7 packages, including `freeswitch-devel`.
 
 This repo is meant for those using these packages but also want to add a “snowflake” RPM
 for internal consumption.
